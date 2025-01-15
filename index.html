@@ -7,42 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>AI Image Generator</h1>
+        <p>Generate stunning AI images by providing a prompt and selecting a style.</p>
+    </header>
     <div class="container">
-        <header>
-            <h1>AI Image Generator</h1>
-            <p>Generate stunning AI images by providing a prompt and selecting a style.</p>
-        </header>
-
-        <!-- Prompt Input -->
-        <div class="input-container">
-            <label for="prompt">Enter a prompt:</label>
-            <input type="text" id="prompt" placeholder="Describe your image..." />
+        <div id="inputContainer" class="subCon">
+            <div id="promptBlock">
+                <label for="prompt">Enter a prompt:</label>
+                <input type="text" id="prompt" placeholder="Describe your image..." />
+            </div>
+            <div class="styleBlock">
+                <label for="style">Select a style:</label>
+                <select id="style">
+                    <option value="">Choose Style</option>
+                </select>
+            </div>
+            <button id="generateButton">Generate Image</button>
         </div>
 
-        <!-- Style Selection -->
-        <div class="input-container">
-            <label for="style">Select a style:</label>
-            <select id="style">
-                <option value="">Choose Style</option>
-            </select>
+
+        
+        <div id="imageContainer" class="subCon">
+            <div id="loading" class="loading">Loading...</div>
+            <img id="generatedImage" src="https://i.ibb.co/HKrYTnZ/27b6e6ecb4c4.jpg" alt="Generated Image" />
         </div>
 
-        <!-- Generate Button -->
-        <button id="generateButton">Generate Image</button>
-
-        <!-- Loading Spinner -->
-        <div id="loading" class="loading">Loading...</div>
-
-        <!-- Image Output Container -->
-        <div id="imageContainer" class="image-container">
-            <img id="generatedImage" src="" alt="Generated Image" />
-        </div>
-
-        <footer>
-            <p>&copy; 2025 AI Image Generator</p>
-        </footer>
     </div>
-
+    <footer>
+        <p>&copy; 2025 AI Image Generator</p>
+    </footer>
+    
     <script src="app.js"></script>
 </body>
 </html>
