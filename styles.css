@@ -36,6 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 80vw;
+    max-height: 60vh;
 }
 
 .subCon {
@@ -94,7 +95,10 @@ button:hover {
 
 #generatedImage {
     max-width: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
+    object-fit: contain;
 }
 
 footer {
